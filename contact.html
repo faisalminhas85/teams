@@ -8,11 +8,14 @@
    default-src 'self';
    script-src 'self' https://faisalminhas85.github.io https://code.jquery.com https://cdnjs.cloudflare.com;
    style-src 'self' https://fonts.googleapis.com;
-   img-src 'self' https://faisalminhas85.github.io;
+   img-src 'self' data: https://faisalminhas85.github.io;
    connect-src 'self' https://faisalminhas85.github.io https://api.example.com;
    font-src 'self' https://fonts.gstatic.com;
    frame-ancestors teams.microsoft.com *.teams.microsoft.com;
+   worker-src 'self'; /* Allow service worker */
+   manifest-src 'self'; /* Allow manifest file access */
 ">
+
 
     <title>Contact</title>
     <link rel="stylesheet" href="style.css">
