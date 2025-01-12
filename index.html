@@ -5,13 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Security-Policy" content="
-       default-src 'self';
-       script-src 'self' https://faisalminhas85.github.io;
-       style-src 'self' https://fonts.googleapis.com;
-       img-src 'self' https://faisalminhas85.github.io/teams/;
-       connect-src 'self' https://faisalminhas85.github.io/teams/;
-       frame-ancestors teams.microsoft.com *.teams.microsoft.com;
-    ">
+   default-src 'self';
+   script-src 'self' https://faisalminhas85.github.io https://code.jquery.com https://cdnjs.cloudflare.com;
+   style-src 'self' https://fonts.googleapis.com;
+   img-src 'self' https://faisalminhas85.github.io;
+   connect-src 'self' https://faisalminhas85.github.io https://api.example.com;
+   font-src 'self' https://fonts.gstatic.com;
+   frame-ancestors teams.microsoft.com *.teams.microsoft.com;
+">
+
     <title>Home</title>
     <link rel="stylesheet" href="style.css">
 </head>
